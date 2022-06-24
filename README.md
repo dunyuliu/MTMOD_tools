@@ -4,6 +4,8 @@ This is the repository hosing information to install necessary tools for the MTM
 ## 1. Preparing suggested operating environments.
 Anaconda (on Linux) is a good cross-platoform computing environment for the majority of tools used in MTMOD. Docker is needed for earthquake dynamic rupture software SeisSol. 
 
+Disk usage: Anaconda may need a minimum of 6GB (20 GB suggested). the Anaconda environment 'mtmod' may need 2GB. The MTMOD_tools folder may need 200 MB. 
+
 ## 2. To install Anaconda on Linux (or Ubuntu subsystem on Windows),
 ```
 wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
