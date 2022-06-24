@@ -13,16 +13,13 @@ bash Anaconda3-2022.05-Linux-x86_64.sh
 
 4. Run the shell script install.sh
 ```
-source install.sh
+source sourceme_install.sh
 ```
 to install the necessary python packages, okada_wrapper, and Elastic_stresses_py.
 
 Misc.
-Update conda
+useful conda commands:
 ```
 conda update -n base -c defaults conda
-```
-remove env mtmod
-``` 
 conda env remove -n mtmod
 ```
