@@ -11,7 +11,7 @@ Disk usage: Anaconda may need a minimum of 6GB (13 GB on Dunyu's Ubuntu Windows 
 wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
 bash Anaconda3-2022.05-Linux-x86_64.sh
 ```
-Right after the installation of Anaconda, you will be asked if to run 'conda init'. We suggested 'yes'.
+Right after the installation of Anaconda, you will be asked if to run 'conda init'. We suggest to type in 'yes'.
 Or, you need to use 
 ```
 source path_to_anaconda/bin/activate
