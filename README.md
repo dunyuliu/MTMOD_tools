@@ -11,6 +11,14 @@ Disk usage: Anaconda may need a minimum of 6GB (13 GB on Dunyu's Ubuntu Windows 
 wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
 bash Anaconda3-2022.05-Linux-x86_64.sh
 ```
+Right after the installation of Anaconda, you will be asked if to run 'conda init'. We suggested 'yes'.
+Or, you need to use 
+```
+source path_to_anaconda/bin/activate
+conda init
+```
+to initiate an Anaconda environment. 
+
 ## 3. To install Docker on Windows, click this [link](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=module) for the installer. 
 
 ## 4. Source the sourceme_install.sh to install the mtmod conda env. 
