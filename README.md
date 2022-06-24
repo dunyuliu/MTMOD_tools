@@ -11,4 +11,18 @@ bash Anaconda3-2022.05-Linux-x86_64.sh
 ```
 3. To install Docker on Windows, click this [link](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=module) for the installer. 
 
-4. Run the shell script install.sh to install the necessary python packages, okada_wrapper, and Elastic_stresses_py.
+4. Run the shell script install.sh
+```
+source install.sh
+```
+to install the necessary python packages, okada_wrapper, and Elastic_stresses_py.
+
+Misc.
+Update conda
+```
+conda update -n base -c defaults conda
+```
+remove env mtmod
+``` 
+conda env remove -n mtmod
+```
