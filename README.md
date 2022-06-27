@@ -1,10 +1,16 @@
 # MTMOD_tools
 This is the repository hosing information to install necessary tools for the MTMOD project.
 
-## 1. Preparing suggested operating environments.
-Anaconda (on Linux) is a good cross-platoform computing environment for the majority of tools used in MTMOD. Docker is needed for earthquake dynamic rupture software SeisSol. 
+## 1. Summary of operating environments, disk usage, and others.
+[Anaconda](https://www.anaconda.com/) is a good cross-platform computing environment to perform Python/R data science and machine learning applications with thousands of open-source packages and libraries. And Anaconda on Linux works well for the majority of tools used in the [MTMOD: Megathrust Modeling Framework](https://sites.utexas.edu/mtmod/) project's 2022 summer school. Docker is needed for earthquake dynamic rupture software SeisSol. (Not sure about Anaconda on Mac, update this later.)
 
-Disk usage: Anaconda may need a minimum of 6GB (13 GB on Dunyu's Ubuntu Windows subsystem). the Anaconda environment 'mtmod' may need 2GB. The MTMOD_tools folder may need 200 MB. 
+### Disk usage: 
+A. We need to install Anaconda, which may need a minimum of 6GB (13 GB on Dunyu's Ubuntu Windows subsystem). 
+B. We need to clone this repositroy (named MTMOD_tools by default) to your local machine and it will finally use about 200 MB.
+C. We will install the conda environment 'mtmod' with the instruction in the section 4. It may need 2GB.
+
+### Installation time
+The installation will take 20 minutes. So, it is suggested to get everything installed before attending the summer school.
 
 ## 2. To install Anaconda on Linux (or Ubuntu subsystem on Windows),
 ```
