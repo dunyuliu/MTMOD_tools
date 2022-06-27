@@ -13,21 +13,41 @@ C. We will install the conda environment 'mtmod' with the instruction in the sec
 The installation will take 20 minutes. So, it is suggested to get everything installed before attending the summer school.
 
 ## 2. To install Anaconda on Linux (or Ubuntu subsystem on Windows),
+### Download and install
 ```
 wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
 bash Anaconda3-2022.05-Linux-x86_64.sh
 ```
-Right after the installation of Anaconda, you will be asked if to run 'conda init'. We suggest to type in 'yes'.
-Or, you need to use 
+### Initiate conda with different shells
+
+Right after the installation of Anaconda, you will be asked to initiate conda with the command
 ```
-source path_to_anaconda/bin/activate
 conda init
 ```
-to initiate an Anaconda environment. 
+Or, you can use 
+```
+conda init --all
+```
+for all the shells (bash, tcsh, fish, xonsh, zsh, powershell, etc.. NOTE, the command will modify .bashrc and/or .tcshrc). 
+
+### Alternatives
+You may want to initiate conda with the following lines
+```
+source $Anaconda_root_path"/etc/profile.d/conda.csh"
+```
+for tcsh or, 
+```
+source $Anaconda_root_path"etc/profile.d/conda.sh"
+```
+for bash shell.
 
 ## 3. To install Docker on Windows, click this [link](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=module) for the installer. 
 
-## 4. Source the sourceme_install.sh to install the mtmod conda env. 
+## 4. Install the mtmod conda environment. 
+First, clone this repository to your local machine with the command
+```
+git clone 
+```
 ```
 source sourceme_install.sh
 ```
