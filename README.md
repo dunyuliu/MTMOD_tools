@@ -57,9 +57,12 @@ cd MTMOD_tools
 ```
 Then, use the following command line to create conda env mtmod,
 ```
+conda env create -f MTMOD_env.yml
+```
+Then, use the following command line to download and install relevant tools
+```
 source sourceme_install.sh
 ```
-that includes necessary python packages, okada_wrapper, Elastic_stresses_py, and cutde.
 
 ## Misc.
 Useful conda commands,
