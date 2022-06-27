@@ -28,7 +28,7 @@ Or, you can use
 ```
 conda init --all
 ```
-for all the shells (bash, tcsh, fish, xonsh, zsh, powershell, etc.. NOTE, the command will modify .bashrc and/or .tcshrc). 
+to initiate conda for all the shells (bash, tcsh, fish, xonsh, zsh, powershell, etc.. NOTE, the command will modify .bashrc and/or .tcshrc). 
 
 ### Alternatives
 You may want to initiate conda with the following lines
