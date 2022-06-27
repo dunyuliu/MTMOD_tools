@@ -5,9 +5,9 @@ The repository contains the information on how to create the computing enviromen
 [Anaconda](https://www.anaconda.com/) is a good cross-platform computing environment to perform Python/R data science and machine learning applications with thousands of open-source packages and libraries. And Anaconda on Linux works well for the majority of tools used in the MTMOD summer school. Docker is needed for earthquake dynamic rupture software [SeisSol](https://www.seissol.org/). (Not sure about Anaconda on Mac, update this later.)
 
 ### Tools currently included
-  okada_wrapper <br />
-  Elastic_stresses_py <br />
-  cutde <br />
+  [okada_wrapper](https://github.com/tbenthompson/okada_wrapper.git) <br />
+  [Elastic_stresses_py](https://github.com/kmaterna/Elastic_stresses_py.git) <br />
+  [cutde](https://github.com/tbenthompson/cutde.git) <br />
   
 ### Disk usage
 A. The installation of Anaconda may need a minimum of 6GB (13 GB on Dunyu's Ubuntu Windows subsystem). <br />
