@@ -10,7 +10,7 @@ The repository contains the information on how to create the computing enviromen
   [cutde](https://github.com/tbenthompson/cutde.git) <br />
   
 ### Disk usage
-A. The installation of Anaconda may need a minimum of 6GB (13 GB on Dunyu's Ubuntu Windows subsystem). <br />
+A. The installation of Anaconda may need a minimum of 4.5GB. <br />
 B. To clone this repositroy (named MTMOD_tools by default) to your local machine and it will finally use about 200 MB. <br />
 C. To install the conda environment 'mtmod' with the instruction in the section 4. It may need 2GB. <br />
 
