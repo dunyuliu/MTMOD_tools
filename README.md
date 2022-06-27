@@ -44,17 +44,18 @@ for bash shell.
 ## 3. To install Docker on Windows, click this [link](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=module) for the installer. 
 
 ## 4. Install the mtmod conda environment. 
-First, clone this repository to your local machine with the command
+First, clone this repository to your local machine with the command,
 ```
-git clone 
+git clone https://github.com/dunyuliu/MTMOD_tools.git
 ```
+Then, use the following command line to create conda env mtmod,
 ```
 source sourceme_install.sh
 ```
-to install the necessary python packages, okada_wrapper, and Elastic_stresses_py.
+that includes necessary python packages, okada_wrapper, Elastic_stresses_py, and cutde.
 
-Misc.
-useful conda commands:
+## Misc.
+Useful conda commands,
 ```
 conda update -n base -c defaults conda
 conda env remove -n mtmod
