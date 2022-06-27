@@ -69,4 +69,5 @@ Useful conda commands,
 ```
 conda update -n base -c defaults conda
 conda env remove -n mtmod
+du -hs $(conda info --base)/envs/mtmod
 ```
