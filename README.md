@@ -15,7 +15,8 @@ B. To clone this repositroy (named MTMOD_tools by default) to your local machine
 C. To install the conda environment 'mtmod' with the instruction in the section 4. It may need 2GB. <br />
 
 ### Installation time
-The installation will take 20 minutes. So, it is suggested to get everything installed before attending the summer school.
+The installation of Anaconda may take 15 minutes. <br />
+So, it is suggested to get everything installed before attending the summer school.
 
 ## 2. To install Anaconda on Linux (or Ubuntu subsystem on Windows),
 ### Download and install
