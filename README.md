@@ -10,9 +10,9 @@ The repository contains the information on how to create the computing enviromen
   cutde <br />
   
 ### Disk usage
-A. We need to install Anaconda, which may need a minimum of 6GB (13 GB on Dunyu's Ubuntu Windows subsystem). <br />
-B. We need to clone this repositroy (named MTMOD_tools by default) to your local machine and it will finally use about 200 MB. <br />
-C. We will install the conda environment 'mtmod' with the instruction in the section 4. It may need 2GB. <br />
+A. The installation of Anaconda may need a minimum of 6GB (13 GB on Dunyu's Ubuntu Windows subsystem). <br />
+B. To clone this repositroy (named MTMOD_tools by default) to your local machine and it will finally use about 200 MB. <br />
+C. To install the conda environment 'mtmod' with the instruction in the section 4. It may need 2GB. <br />
 
 ### Installation time
 The installation will take 20 minutes. So, it is suggested to get everything installed before attending the summer school.
