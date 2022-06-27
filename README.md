@@ -16,6 +16,7 @@ C. To install the conda environment 'mtmod' with the instruction in the section 
 
 ### Installation time
 The installation of Anaconda may take 15 minutes. <br />
+The creation of mtmod conda environment may take 20 minutes. <br />
 So, it is suggested to get everything installed before attending the summer school.
 
 ## 2. To install Anaconda on Linux (or Ubuntu subsystem on Windows),
