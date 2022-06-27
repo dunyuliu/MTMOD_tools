@@ -1,13 +1,18 @@
 # MTMOD_tools
-This is the repository hosing information to install necessary tools for the MTMOD project.
+The repository contains the information on how to create the computing enviroment for the [MTMOD: Megathrust Modeling Framework](https://sites.utexas.edu/mtmod/) project's 2022 summer school.
 
 ## 1. Summary of operating environments, disk usage, and others.
-[Anaconda](https://www.anaconda.com/) is a good cross-platform computing environment to perform Python/R data science and machine learning applications with thousands of open-source packages and libraries. And Anaconda on Linux works well for the majority of tools used in the [MTMOD: Megathrust Modeling Framework](https://sites.utexas.edu/mtmod/) project's 2022 summer school. Docker is needed for earthquake dynamic rupture software [SeisSol](https://www.seissol.org/). (Not sure about Anaconda on Mac, update this later.)
+[Anaconda](https://www.anaconda.com/) is a good cross-platform computing environment to perform Python/R data science and machine learning applications with thousands of open-source packages and libraries. And Anaconda on Linux works well for the majority of tools used in the MTMOD summer school. Docker is needed for earthquake dynamic rupture software [SeisSol](https://www.seissol.org/). (Not sure about Anaconda on Mac, update this later.)
 
-### Disk usage: 
-A. We need to install Anaconda, which may need a minimum of 6GB (13 GB on Dunyu's Ubuntu Windows subsystem). 
-B. We need to clone this repositroy (named MTMOD_tools by default) to your local machine and it will finally use about 200 MB.
-C. We will install the conda environment 'mtmod' with the instruction in the section 4. It may need 2GB.
+### Tools currently included
+  okada_wrapper <br />
+  Elastic_stresses_py <br />
+  cutde <br />
+  
+### Disk usage
+A. We need to install Anaconda, which may need a minimum of 6GB (13 GB on Dunyu's Ubuntu Windows subsystem). <br />
+B. We need to clone this repositroy (named MTMOD_tools by default) to your local machine and it will finally use about 200 MB. <br />
+C. We will install the conda environment 'mtmod' with the instruction in the section 4. It may need 2GB. <br />
 
 ### Installation time
 The installation will take 20 minutes. So, it is suggested to get everything installed before attending the summer school.
