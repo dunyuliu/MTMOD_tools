@@ -52,6 +52,7 @@ for bash shell.
 First, clone this repository to your local machine with the command,
 ```
 git clone https://github.com/dunyuliu/MTMOD_tools.git
+cd MTMOD_tools
 ```
 Then, use the following command line to create conda env mtmod,
 ```
