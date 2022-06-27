@@ -1,12 +1,7 @@
-## Install Anaconda on Linux
-#wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
-#bash Anaconda3-2022.05-Linux-x86_64.sh
+## First, you need to install Anaconda on Linux
+# wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
+# bash Anaconda3-2022.05-Linux-x86_64.sh
 
-# Creating a directory mtmod to host all the tools.
-#mkdir mtmod
-#cd mtmod
-
-eval "$(conda shell.bash hook)"
 # Creating a conda environment 'mtmod' using the MTMOD_env.yml.
 conda env create -f MTMOD_env.yml
 # Activate mtmod.
