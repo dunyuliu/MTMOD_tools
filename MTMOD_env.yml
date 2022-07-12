@@ -12,6 +12,7 @@ dependencies:
   - gmt
   - pygmt
   - pip
+  - gsl
   - pip:
     - gdal==3.5.0
     - okada-wrapper==18.12.7.3

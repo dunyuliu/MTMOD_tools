@@ -23,7 +23,7 @@ git clone https://github.com/tbenthompson/cutde.git
 # Run the test
 cd test
 cd cutde
-python test_cutde.py $$ echo 'cutde installed and tested SUCCESSFULLY' || echo FAIL
+python test_cutde.py && echo 'cutde installed and tested SUCCESSFULLY' || echo FAIL
 cd ../..
 
 # 3 #
@@ -35,6 +35,17 @@ echo 'INSTALLING Dr. Kathryn Materna Elastic_stresses_py.'
 cd Elastic_stresses_py
 python setup.py install && echo 'Elastic_stresses_py installed SUCCESSFULLY' || echo FAIL
 elastic_stresses_driver.py examples/example_config.txt && echo 'Example run SUCCESS' ||echo FAIL
+cd ..
+
+# 4 #
+# Downloading Dr. Camilla Cattania's crs to calculate rate-state seismicity evolution induced by time dependent, heterogeneous Coulomb stress changes.
+git clone https://github.com/dunyuliu/crs_mtmod.git
+cd crs_mtmod
+echo '------------------------'
+echo 'INSTALLING Dr. Camilla Cattania crs.'
+source crs_install.sh && echo 'crs installed SUCCESSFULLY' || echo FAIL
+
+# Exiting ... #
 cd ..
 echo '------------------------'
 echo 'MTMOD tools READY to use. Cheers!'
