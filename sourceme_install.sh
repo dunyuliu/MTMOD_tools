@@ -43,9 +43,9 @@ git clone https://github.com/dunyuliu/crs_mtmod.git
 cd crs_mtmod
 echo '------------------------'
 echo 'INSTALLING Dr. Camilla Cattania crs.'
-source crs_install.sh && echo 'crs installed SUCCESSFULLY' || echo FAIL
+source crs_install.sh && echo 'crs installed and tested SUCCESSFULLY' || echo FAIL
+cd ..
 
 # Exiting ... #
-cd ..
 echo '------------------------'
 echo 'MTMOD tools READY to use. Cheers!'
