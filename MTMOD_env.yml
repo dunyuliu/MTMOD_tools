@@ -10,6 +10,8 @@ dependencies:
   - scipy
   - xarray
   - gmt
+  - gfortran
+  - latexcodec
   - pygmt
   - pip
   - gsl
