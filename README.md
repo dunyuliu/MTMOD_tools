@@ -14,6 +14,7 @@ Ubuntu windows subsystem <br/>
   [Elastic_stresses_py](https://github.com/kmaterna/Elastic_stresses_py.git) <br />
   [cutde](https://github.com/tbenthompson/cutde.git) <br />
   [crs](https://github.com/dunyuliu/crs_mtmod) <br />
+  Earthquake-Python-Examples <br/>
   [SeisSol](https://www.seissol.org/) and [SeisSol Tutorial](https://github.com/SeisSol/Training)
   
 ### Disk usage
