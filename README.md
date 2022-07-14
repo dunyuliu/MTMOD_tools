@@ -2,13 +2,19 @@
 The repository contains the information on how to create the computing enviroment for the [MTMOD: Megathrust Modeling Framework](https://sites.utexas.edu/mtmod/) project's 2022 summer school.
 
 ## 1. Summary of operating environments, disk usage, and others.
-[Anaconda](https://www.anaconda.com/) is a good cross-platform computing environment to perform Python/R data science and machine learning applications with thousands of open-source packages and libraries. And Anaconda on Linux works well for the majority of tools used in the MTMOD summer school. Docker is needed for earthquake dynamic rupture software [SeisSol](https://www.seissol.org/). (Not sure about Anaconda on Mac, update this later.)
+[Anaconda](https://www.anaconda.com/) is a good cross-platform computing environment to perform Python/R data science and machine learning applications with thousands of open-source packages and libraries. And Anaconda on Linux works well for the majority of tools used in the MTMOD summer school. <br/>
+[Docker](https://www.docker.com/) is needed for earthquake dynamic rupture software [SeisSol](https://www.seissol.org/). For details, please refer to section 3 in this doc. <br/> 
+
+### Working systems
+Ubuntu windows subsystem <br/>
+(Currently testing on Mac, will update this later.)
 
 ### Tools currently included
   [okada_wrapper](https://github.com/tbenthompson/okada_wrapper.git) <br />
   [Elastic_stresses_py](https://github.com/kmaterna/Elastic_stresses_py.git) <br />
   [cutde](https://github.com/tbenthompson/cutde.git) <br />
   [crs](https://github.com/dunyuliu/crs_mtmod) <br />
+  [SeisSol](https://www.seissol.org/) and [SeisSol Tutorial](https://github.com/SeisSol/Training)
   
 ### Disk usage
 A. The installation of Anaconda may need a minimum of 4.5GB. <br />
@@ -49,7 +55,16 @@ source $Anaconda_root_path"etc/profile.d/conda.sh"
 ```
 for bash shell.
 
-## 3. To install Docker on Windows, click this [link](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=module) for the installer. 
+## 3. To install and run [SeisSol tutorial](https://github.com/SeisSol/Training), please install Docker.
+### To install Docker on Windows, click this [link](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=module) for the installer. 
+### On Windows, to run SeisSol tutorials,
+Frist, Open a cmd terminal. <br/>
+Then, run the following command
+```
+docker run -p 53155:53155 alicegabriel/seissol-training
+```
+Then, you will get a link after a few minutes downloading. <br/>
+Finally, copy the link to a web browser and you can navigate to the jupyter notebook TPV13.ipynb for the benchmark problem TPV13 from the [SCEC dynamic rupture code verification project](https://strike.scec.org/cvws/tpv12_13docs.html).
 
 ## 4. Install the mtmod conda environment. 
 First, clone this repository to your local machine with the command,
