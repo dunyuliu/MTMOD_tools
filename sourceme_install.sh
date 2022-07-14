@@ -16,15 +16,15 @@ echo '------------------------'
 python okada_wrapper/test_okada.py && echo 'okada_wrapper installed and tested SUCESSFULLY' || echo FAIL
 echo '------------------------'
 
-# 2 #
-echo 'GIT CLONENING Dr. Ben Thompson cutde.'
-rm -rf cutde
-git clone https://github.com/tbenthompson/cutde.git
-# Run the test
-cd test
-cd cutde
-python test_cutde.py && echo 'cutde installed and tested SUCCESSFULLY' || echo FAIL
-cd ../..
+## 2 #
+#echo 'GIT CLONENING Dr. Ben Thompson cutde.'
+#rm -rf cutde
+#git clone https://github.com/tbenthompson/cutde.git
+## Run the test
+#cd test
+#cd cutde
+#python test_cutde.py && echo 'cutde installed and tested SUCCESSFULLY' || echo FAIL
+#cd ../..
 
 # 3 #
 # Downloading Dr. Kathryn Materna's Elastic_stresses_py for Coulomb Stress.

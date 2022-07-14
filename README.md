@@ -8,6 +8,7 @@ The repository contains the information on how to create the computing enviromen
   [okada_wrapper](https://github.com/tbenthompson/okada_wrapper.git) <br />
   [Elastic_stresses_py](https://github.com/kmaterna/Elastic_stresses_py.git) <br />
   [cutde](https://github.com/tbenthompson/cutde.git) <br />
+  [crs](https://github.com/dunyuliu/crs_mtmod) <br />
   
 ### Disk usage
 A. The installation of Anaconda may need a minimum of 4.5GB. <br />
