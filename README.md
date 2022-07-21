@@ -89,3 +89,7 @@ conda update -n base -c defaults conda
 conda env remove -n mtmod
 du -hs $(conda info --base)/envs/mtmod
 ```
+
+## On choosing a proper license for your open-source project
+This [link](https://choosealicense.com/about/) provides very useful information on licenses.
+
