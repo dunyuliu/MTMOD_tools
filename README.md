@@ -4,6 +4,7 @@ The repository contains the information on how to create the computing enviromen
 ## 1. Summary of operating environments, disk usage, and others.
 [Anaconda](https://www.anaconda.com/) is a good cross-platform computing environment to perform Python/R data science and machine learning applications with thousands of open-source packages and libraries. And Anaconda on Linux works well for the majority of tools used in the MTMOD summer school. <br/>
 [Docker](https://www.docker.com/) is needed for earthquake dynamic rupture software [SeisSol](https://www.seissol.org/). For details, please refer to section 3 in this doc. <br/> 
+[MATLAB](https://www.mathworks.com/products/matlab.html) is needed for RateState and plotting crs results. <br/>
 
 ### Working systems
 Ubuntu windows subsystem <br/>
@@ -15,7 +16,8 @@ Ubuntu windows subsystem <br/>
   [cutde](https://github.com/tbenthompson/cutde.git) <br />
   [crs](https://github.com/dunyuliu/crs_mtmod) <br />
   Earthquake-Python-Examples <br/>
-  [SeisSol](https://www.seissol.org/) and [SeisSol Tutorial](https://github.com/SeisSol/Training)
+  [SeisSol](https://www.seissol.org/) and [SeisSol Tutorial](https://github.com/SeisSol/Training) <br/>
+  [RateState](https://drive.google.com/drive/folders/15nl880SFTFe61iJDIw38vunxTQdSBYZY?usp=sharing)
   
 ### Disk usage
 A. The installation of Anaconda may need a minimum of 4.5GB. <br />
@@ -81,6 +83,29 @@ Then, use the following command line to download and install relevant tools
 ```
 source sourceme_install.sh
 ```
+
+## 5. Install RateState
+RateState is currently available through this [google drive link](https://drive.google.com/drive/folders/15nl880SFTFe61iJDIw38vunxTQdSBYZY?usp=sharing). <br/>
+It runs mainly in MATLAB but relis on hmmvp, which needs to be compiled with MATLAB mex C++ compiler. <br/> 
+
+First, you need to install MinGW add-on for MATLAB, which can be found on MATLAB HOME/add-on. <br/>
+Second, install [gnumex](https://sourceforge.net/projects/gnumex/files/latest/download). <br/>
+```
+cd gnumex
+getenv MW_MINGW64_LOC
+gnumex
+```
+Then, you will see a graphic interface.  <br/>
+Copy and paste the path from getenv MW_MINGW64_LOC to MinGW root directory.  <br/>
+Then, run the interface.  <br/>
+
+Next, you need to install hmmvp. <br/>
+```
+cd RateState/hmmvp (or hmmvp_win for Windows users)
+make
+```
+After hmmvp is successfully installed, you can run the test_run.m.  <br/>
+For more details, please refer to Brief_Instruction.txt.
 
 ## Misc.
 Useful conda commands,
