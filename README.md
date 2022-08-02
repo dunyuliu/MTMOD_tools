@@ -7,8 +7,8 @@ The repository contains the information on how to create the computing enviromen
 [MATLAB](https://www.mathworks.com/products/matlab.html) is needed for RateState and plotting crs results. <br/>
 
 ### Working systems
-Ubuntu windows subsystem <br/>
-(Currently testing on Mac, will update this later.)
+Ubuntu Windows Subsystem <br/>
+MacOS (for crs, you may need a different c++ compiler other than the default clang.) <br/>
 
 ### Tools currently included
   [okada_wrapper](https://github.com/tbenthompson/okada_wrapper.git) <br />
