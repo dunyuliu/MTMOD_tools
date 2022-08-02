@@ -1,7 +1,7 @@
 # MTMOD_tools
 The repository contains the information on how to create the computing enviroment for the [MTMOD: Megathrust Modeling Framework](https://sites.utexas.edu/mtmod/) project's 2022 summer school.
 
-## 1. Summary of operating environments, disk usage, and others.
+## 1. Requirements of operating environments, disk usage, and others.
 [Anaconda](https://www.anaconda.com/) is a good cross-platform computing environment to perform Python/R data science and machine learning applications with thousands of open-source packages and libraries. And Anaconda on Linux works well for the majority of tools used in the MTMOD summer school. <br/>
 [Docker](https://www.docker.com/) is needed for earthquake dynamic rupture software [SeisSol](https://www.seissol.org/). For details, please refer to section 3 in this doc. <br/> 
 [MATLAB](https://www.mathworks.com/products/matlab.html) is needed for RateState and plotting crs results. <br/>
