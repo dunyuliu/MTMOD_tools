@@ -17,7 +17,8 @@ MacOS (for crs, you may need a different c++ compiler other than the default cla
   [crs](https://github.com/dunyuliu/crs_mtmod) <br />
   Earthquake-Python-Examples <br/>
   [SeisSol](https://www.seissol.org/) and [SeisSol Tutorial](https://github.com/SeisSol/Training) <br/>
-  [RateState](https://drive.google.com/drive/folders/15nl880SFTFe61iJDIw38vunxTQdSBYZY?usp=sharing)
+  [RateState](https://drive.google.com/drive/folders/15nl880SFTFe61iJDIw38vunxTQdSBYZY?usp=sharing) <br/>
+  Some useful datasets are provided under the subfolder /datasets. Please refer to the REAME inside for details.
   
 ### Disk usage
 A. The installation of Anaconda may need a minimum of 4.5GB. <br />
