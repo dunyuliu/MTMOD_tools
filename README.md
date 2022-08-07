@@ -4,7 +4,7 @@ The repository contains the information on how to create the computing enviromen
 ## 1. Requirements of operating environments, disk usage, and others.
 [Anaconda](https://www.anaconda.com/) is a good cross-platform computing environment to perform Python/R data science and machine learning applications with thousands of open-source packages and libraries. And Anaconda on Linux works well for the majority of tools used in the MTMOD summer school. <br/>
 [Docker](https://www.docker.com/) is needed for earthquake dynamic rupture software [SeisSol](https://www.seissol.org/). For details, please refer to section 3 in this doc. <br/> 
-[MATLAB](https://www.mathworks.com/products/matlab.html) is needed for RateState and plotting crs results. <br/>
+[MATLAB](https://www.mathworks.com/products/matlab.html) is needed for RateState, d94, and plotting crs results. <br/>
 
 ### Working systems
 Ubuntu Windows Subsystem <br/>
@@ -15,10 +15,11 @@ MacOS (for crs, you may need a different c++ compiler other than the default cla
   [Elastic_stresses_py](https://github.com/kmaterna/Elastic_stresses_py.git) <br />
   [cutde](https://github.com/tbenthompson/cutde.git) <br />
   [crs](https://github.com/dunyuliu/crs_mtmod) <br />
+  [d94](https://github.com/camcat/d94-mtmod) <br />
   Earthquake-Python-Examples <br/>
   [SeisSol](https://www.seissol.org/) and [SeisSol Tutorial](https://github.com/SeisSol/Training) <br/>
   [RateState](https://drive.google.com/drive/folders/15nl880SFTFe61iJDIw38vunxTQdSBYZY?usp=sharing) <br/>
-  Some useful datasets are provided under the subfolder /datasets. Please refer to the REAME inside for details.
+  Some useful datasets are provided under the subfolder /datasets. Please refer to the REAME inside for details. 
   
 ### Disk usage
 A. The installation of Anaconda may need a minimum of 4.5GB. <br />
