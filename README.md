@@ -15,10 +15,10 @@ MacOS (for crs, you may need a different c++ compiler other than the default cla
   [Elastic_stresses_py](https://github.com/kmaterna/Elastic_stresses_py.git) <br />
   [cutde](https://github.com/tbenthompson/cutde.git) <br />
   [crs](https://github.com/dunyuliu/crs_mtmod) <br />
-  [d94](https://github.com/camcat/d94-mtmod) <br />
+  [d94](https://github.com/camcat/d94-mtmod) - see section 6 <br />
   Earthquake-Python-Examples <br/>
-  [SeisSol](https://www.seissol.org/) and [SeisSol Tutorial](https://github.com/SeisSol/Training) <br/>
-  [RateState](https://drive.google.com/drive/folders/15nl880SFTFe61iJDIw38vunxTQdSBYZY?usp=sharing) <br/>
+  [SeisSol](https://www.seissol.org/) and [SeisSol Tutorial](https://github.com/SeisSol/Training) - see section 3 <br/>
+  [RateState](https://drive.google.com/drive/folders/15nl880SFTFe61iJDIw38vunxTQdSBYZY?usp=sharing) - see section 5 <br/>
   Some useful datasets are provided under the subfolder /datasets. Please refer to the REAME inside for details. 
   
 ### Disk usage
@@ -108,6 +108,14 @@ make
 ```
 After hmmvp is successfully installed, you can run the test_run.m.  <br/>
 For more details, please refer to Brief_Instruction.txt.
+
+## 6. [d94](https://github.com/camcat/d94-mtmod) 
+d94 is a MATLAB tutorial package to calculate seismicity forecasts based on Dieterich (1994). <br />
+To download d94, 
+```
+git clone https://github.com/camcat/d94-mtmod.git
+```
+Then, you can run tutorials tutorial.mlx and tutorial-Norcia.mlx by following the guidance. There are also a few questions.
 
 ## Misc.
 Useful conda commands,
