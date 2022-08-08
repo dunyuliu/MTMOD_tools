@@ -18,7 +18,7 @@ MacOS (for crs, you may need a different c++ compiler other than the default cla
   [d94](https://github.com/camcat/d94-mtmod) - see section 6 <br />
   Earthquake-Python-Examples <br/>
   [SeisSol](https://www.seissol.org/) and [SeisSol Tutorial](https://github.com/SeisSol/Training) - see section 3 <br/>
-  [RateState](https://drive.google.com/drive/folders/15nl880SFTFe61iJDIw38vunxTQdSBYZY?usp=sharing) - see section 5 <br/>
+  [RateState](https://drive.google.com/drive/folders/15nl880SFTFe61iJDIw38vunxTQdSBYZY?usp=sharing) and ViscoQD - see section 5 <br/>
   Some useful datasets are provided under the subfolder /datasets. Please refer to the REAME inside for details. 
   
 ### Disk usage
