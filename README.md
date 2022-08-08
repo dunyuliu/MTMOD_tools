@@ -132,6 +132,10 @@ You may need jupyter notebook. You can install it when the 'mtmod' env is activa
 ```
 conda install -c anaconda jupyter
 ```
+You may need tex and latex. On Ubuntu, you can try this
+```
+sudo apt install texlive divpng
+```
 ## On choosing a proper license for your open-source project
 This [link](https://choosealicense.com/about/) provides very useful information on licenses.
 
