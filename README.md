@@ -63,7 +63,11 @@ for bash shell.
 ## 3. To install and run [SeisSol tutorial](https://github.com/SeisSol/Training), please install Docker.
 ### To install Docker on Windows, click this [link](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=module) for the installer. 
 ### On Windows, to run SeisSol tutorials,
-Frist, Open a cmd terminal. <br/>
+Frist, Open a cmd terminal, probably with admin. <br/>
+Pull the image, <br />
+```
+docker pull alicegabriel/seissol-training
+```
 Then, run the following command
 ```
 docker run -p 53155:53155 alicegabriel/seissol-training
