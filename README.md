@@ -104,7 +104,7 @@ source sourceme_install.sh
 ```
 
 ## 5. Install RateState
-RateState is currently available through this [google drive link](https://drive.google.com/drive/folders/15nl880SFTFe61iJDIw38vunxTQdSBYZY?usp=sharing). <br/>
+RateState is currently available through this [link](https://utexas-my.sharepoint.com/:u:/g/personal/dliu_ig_utexas_edu/EUt_lc_rWkNGsHoA6IJ3HVMBmCIjAtJx2YlaOFvpy8Io0g?e=bM7qpb). <br/>
 It runs mainly in MATLAB but relis on hmmvp, which needs to be compiled with MATLAB mex C++ compiler. <br/> 
 
 First, you need to install MinGW add-on for MATLAB, which can be found on MATLAB HOME/add-on. <br/>
