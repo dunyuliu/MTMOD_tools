@@ -1,6 +1,15 @@
 # MTMOD_tools
-The repository contains the information on how to create the computing enviroment for the [MTMOD: Megathrust Modeling Framework](https://sites.utexas.edu/mtmod/) project's 2022 summer school.
+The repository contains the information on how to create the computing enviroment for the [MTMOD: Megathrust Modeling Framework](https://sites.utexas.edu/mtmod/) project's summer schools since 2022.
 
+## ***News in 2023***
+* [SZ_2D_thermal_structure](https://github.com/gabriellemhobson/SZ_2D_thermal_structure.git), [fdra-mtmod](https://github.com/camcat/fdra-mtmod.git) are welcomed to the MTMOD toolset. <br/>
+* Docker image of MTMOD toolset is available via ***```docker pull dunyuliu/mtmod```*** and [this link](https://hub.docker.com/r/dunyuliu/mtmod). A quick start guide on how to use Docker and run the mtmod docker image is also added. <br/>
+* The majority of MTMOD tools are built under Anaconda env ```mtmod```.
+  * If you have an exisiting ```mtmod```, please ```source MTMOD.env.2023.add.sh``` for the 2023 summer school.
+  * If you intend to build from scratch, please following section 2 in this README to install Anaconda on Mac/Windows Linux Subsystem and section 4 to create the ```mtmod``` env.
+* elastic.stress.py.install.sh, crs.mtmod.install.sh, sz.2d.thermal.structure.install.sh, and fdra.mtmod.install.sh are created to install and test individual package after env ```mtmod``` is activated. Simply ```source *.install.sh```.
+* You may use ```source MTMOD.package.check.sh``` to check the versions of key packages and if any one is missing.   
+  
 ## 1. Requirements of operating environments, disk usage, and others.
 [Anaconda](https://www.anaconda.com/) is a good cross-platform computing environment to perform Python/R data science and machine learning applications with thousands of open-source packages and libraries. And Anaconda on Linux works well for the majority of tools used in the MTMOD summer school. <br/>
 [Docker](https://www.docker.com/) is needed for earthquake dynamic rupture software [SeisSol](https://www.seissol.org/). For details, please refer to section 3 in this doc. <br/> 
