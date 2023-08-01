@@ -14,11 +14,9 @@ git clone https://github.com/gabriellemhobson/SZ_2D_thermal_structure
 echo 'Cloning ParametricModelUtils ... ...'
 cd SZ_2D_thermal_structure
 git clone https://github.com/hpc4geo/ParametricModelUtils.git
-cd ..
 
-echo 'Now back to SZ_2D_thermal_structure root directory ... ...'
+echo ' '
 echo 'Running a test example ... ...'
-
 echo 'Check the repo is up to date and paths are correct'
 
 source setup.sh
