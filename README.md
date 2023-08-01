@@ -2,18 +2,18 @@
 The repository contains the information on how to create the computing enviroment for the [MTMOD: Megathrust Modeling Framework](https://sites.utexas.edu/mtmod/) project's summer schools since 2022.
 
 ## ***News in 2023***
-* [SZ_2D_thermal_structure](https://github.com/gabriellemhobson/SZ_2D_thermal_structure.git), [fdra-mtmod](https://github.com/camcat/fdra-mtmod.git) are welcomed to the MTMOD toolset. <br/>
-* Docker image of MTMOD toolset is available via ***```docker pull dunyuliu/mtmod```*** and [this link](https://hub.docker.com/r/dunyuliu/mtmod). A quick start guide on how to use Docker and run the mtmod docker image is also added. <br/>
+* [SZ_2D_thermal_structure](https://github.com/gabriellemhobson/SZ_2D_thermal_structure.git), [fdra-mtmod](https://github.com/camcat/fdra-mtmod.git) are welcomed to MTMOD_tools. <br/>
+* The docker image of MTMOD_tools is available via ***```docker pull dunyuliu/mtmod```*** and also [this link](https://hub.docker.com/r/dunyuliu/mtmod). A quick start guide on how to use Docker Desktop and run the ```mtmod``` docker image is available via ```docker.quickstart.guide.md```. <br/>
 * The majority of MTMOD tools are built under Anaconda env ```mtmod```.
-  * If you have an exisiting ```mtmod```, please ```source MTMOD.env.2023.add.sh``` for the 2023 summer school.
-  * If you intend to build from scratch, please following section 2 in this README to install Anaconda on Mac/Windows Linux Subsystem and section 4 to create the ```mtmod``` env.
+  * If you have an exisiting ```mtmod``` built in previous summer school, please ```source MTMOD.env.2023.add.sh``` for additional packages for the 2023 summer school.
+  * If you intend to build ```mtmod``` env from scratch, please following Section 2 to install Anaconda on Mac/Windows Linux Subsystem and Section 4 to create the ```mtmod``` env.
 * elastic.stress.py.install.sh, crs.mtmod.install.sh, sz.2d.thermal.structure.install.sh, and fdra.mtmod.install.sh are created to install and test individual package after env ```mtmod``` is activated. Simply ```source *.install.sh```.
 * You may use ```source MTMOD.package.check.sh``` to check the versions of key packages and if any one is missing.   
   
 ## 1. Requirements of operating environments, disk usage, and others.
 [Anaconda](https://www.anaconda.com/) is a good cross-platform computing environment to perform Python/R data science and machine learning applications with thousands of open-source packages and libraries. And Anaconda on Linux works well for the majority of tools used in the MTMOD summer school. <br/>
 [Docker](https://www.docker.com/) is needed for earthquake dynamic rupture software [SeisSol](https://www.seissol.org/). For details, please refer to section 3 in this doc. <br/> 
-[MATLAB](https://www.mathworks.com/products/matlab.html) is needed for RateState, d94, and plotting crs results. <br/>
+[MATLAB](https://www.mathworks.com/products/matlab.html) is needed for RateState, d94, plotting crs results, and fdra-mtmod. <br/>
 
 ### Working systems
 Ubuntu Windows Subsystem <br/>
@@ -28,17 +28,21 @@ MacOS (for crs, you may need a different c++ compiler other than the default cla
   Earthquake-Python-Examples <br/>
   [SeisSol](https://www.seissol.org/) and [SeisSol Tutorial](https://github.com/SeisSol/Training) - see section 3 <br/>
   [RateState](https://drive.google.com/drive/folders/15nl880SFTFe61iJDIw38vunxTQdSBYZY?usp=sharing) and ViscoQD - see section 5 <br/>
+  [SZ_2D_thermal_structure](https://github.com/gabriellemhobson/SZ_2D_thermal_structure.git) <br/>
+  [fdra-mtmod](https://github.com/camcat/fdra-mtmod.git) <br/>
   Some useful datasets are provided under the subfolder /datasets. Please refer to the REAME inside for details. 
   
 ### Disk usage
 A. The installation of Anaconda may need a minimum of 4.5GB. <br />
 B. To clone this repositroy (named MTMOD_tools by default) to your local machine and it will finally use about 200 MB. <br />
-C. To install the conda environment 'mtmod' with the instruction in the section 4. It may need 2GB. <br />
+C. To install the conda environment 'mtmod' with the instruction in the section 4 using MTMOD_env.yml, it may need 2GB. <br />
+D. In 2023, SZ_2D_thermal_structure requires the legacy fenics, petsc and gmsh. The docker image is ~10GBs.
 
 ### Installation time
-The installation of Anaconda may take 15 minutes. <br />
-The creation of mtmod conda environment may take 20 minutes. <br />
-So, it is suggested to get everything installed before attending the summer school.
+* The installation of Anaconda may take 15 minutes. <br />
+* The creation of mtmod conda environment may take 20 minutes. <br />
+* In 2023, ```source MTMOD.env.2023.add.sh``` should take less than 1 hour. <br/>
+So, it is STRONGLY suggested to get everything installed before attending the summer school.
 
 ## 2. To install Anaconda on Linux (or Ubuntu subsystem on Windows),
 ### Download and install
