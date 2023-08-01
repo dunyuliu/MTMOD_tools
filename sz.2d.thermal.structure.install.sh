@@ -28,7 +28,7 @@ cd generate_meshes
 echo 'Check that the slab profile info in the csv input file is correct.'
 echo 'Generate the geometry and mesh files:'
 
-python3 driver_generate_mesh_generic.py --profile_csv "cascadia_start_end_points.csv" --slab_name "cascadia" --corner_depth -35.0 --output_path "output"
+python3 driver_generate_mesh_generic.py --profile_csv "cascadia_start_end_points.csv" --slab_name "cascadia" --corner_depth -35.0 --output_path "output" --write_msh True
 
 echo 'Create the required mesh files for fenics usage and post-processing steps.'
 cd ..
@@ -44,7 +44,7 @@ echo 'Once the forward model is done, perform the post-processing steps to creat
 
 python3 post_process.py --jobs_csv "cascadia_profile_B_example_log.csv" --mesh_path "generate_meshes/output/cascadia_profile_B" --profile_name "cascadia_profile_B" --include "halton"
 
-echo 'Look at your plots and be proud that you've run this code!'
+echo 'Look at your plots and be proud that you have run this code!'
 
 
 
