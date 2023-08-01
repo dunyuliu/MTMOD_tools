@@ -2,6 +2,12 @@
 echo 'Cloning SZ_2D_thermal_structure ... ...'
 echo 'It requires fenics-2019, petsc, gmsh, and ParametricModelUtils ... ...'
 echo ' '
+echo 'It also requires gmsh, which is installed via apt-get ... ...'
+apt-get install gmsh
+echo 'Check gmsh version ... ...'
+gmsh --info 
+echo ' '
+  
 rm -rf SZ_2D_thermal_structure
 git clone https://github.com/gabriellemhobson/SZ_2D_thermal_structure
 
