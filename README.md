@@ -1,14 +1,16 @@
 # MTMOD_tools
-The repository contains the information on how to create the computing enviroment for the [MTMOD: Megathrust Modeling Framework](https://sites.utexas.edu/mtmod/) project's summer schools since 2022.
+The repository contains the information on how to create the computing environment for the [MTMOD: Megathrust Modeling Framework](https://sites.utexas.edu/mtmod/) project's summer schools since 2022.
 
 ## ***News in 2023***
 * [SZ_2D_thermal_structure](https://github.com/gabriellemhobson/SZ_2D_thermal_structure.git), [fdra-mtmod](https://github.com/camcat/fdra-mtmod.git) are welcomed to MTMOD_tools. <br/>
 * The docker image of MTMOD_tools is available via ***```docker pull dunyuliu/mtmod```*** and also [this link](https://hub.docker.com/r/dunyuliu/mtmod). A quick start guide on how to use Docker Desktop and run the ```mtmod``` docker image is available via ```docker.quickstart.guide.md```. <br/>
 * The majority of MTMOD tools are built under Anaconda env ```mtmod```.
-  * If you have an exisiting ```mtmod``` built in previous summer school, please ```source MTMOD.env.2023.add.sh``` for additional packages for the 2023 summer school.
+  * If you have an exisiting ```mtmod``` env built in previous summer school, please ```source MTMOD.env.2023.add.sh``` in the terminal to add additional packages for the 2023 summer school.
   * If you intend to build ```mtmod``` env from scratch, please following Section 2 to install Anaconda on Mac/Windows Linux Subsystem and Section 4 to create the ```mtmod``` env.
 * elastic.stress.py.install.sh, crs.mtmod.install.sh, sz.2d.thermal.structure.install.sh, and fdra.mtmod.install.sh are created to install and test individual package after env ```mtmod``` is activated. Simply ```source *.install.sh```.
+* test.all.sh is a master script to install and test all the tools, simply ```source test.all.sh```. 
 * You may use ```source MTMOD.package.check.sh``` to check the versions of key packages and if any one is missing.   
+* gmsh and make are needed if not installed. Please ```sudo apt-get gmsh make``` if using Ubuntu.
   
 ## 1. Requirements of operating environments, disk usage, and others.
 [Anaconda](https://www.anaconda.com/) is a good cross-platform computing environment to perform Python/R data science and machine learning applications with thousands of open-source packages and libraries. And Anaconda on Linux works well for the majority of tools used in the MTMOD summer school. <br/>
@@ -98,10 +100,22 @@ Then, use the following command line to create conda env mtmod,
 ```
 conda env create -f MTMOD_env.yml
 ```
-Then, use the following command line to download and install relevant tools
+Then, 
 ```
-source sourceme_install.sh
+source MTMOD.env.2022.sh
 ```
+to ensure all the packages are installed via conda and pip. <br/>
+
+Then, use the following command line to download, install and test relevant tools
+```
+source test.all.sh
+```
+
+Or, you may choose to download, install and test individual package using 
+```
+source $packagename.install.sh
+```
+where please replace $packagename to the package you need. <br/>
 
 ## 5. Install RateState
 RateState is currently available through this [link](https://utexas-my.sharepoint.com/:u:/g/personal/dliu_ig_utexas_edu/EUt_lc_rWkNGsHoA6IJ3HVMBmCIjAtJx2YlaOFvpy8Io0g?e=bM7qpb). <br/>
