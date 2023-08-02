@@ -44,7 +44,7 @@ D. In 2023, SZ_2D_thermal_structure requires the legacy fenics, petsc and gmsh. 
 * The installation of Anaconda may take 15 minutes. <br />
 * The creation of mtmod conda environment may take 20 minutes. <br />
 * In 2023, ```source MTMOD.env.2023.add.sh``` should take less than 1 hour. <br/>
-So, it is STRONGLY suggested to get everything installed before attending the summer school.
+Therefore, it is STRONGLY suggested to get everything installed before attending the summer school.
 
 ## 2. To install Anaconda on Linux (or Ubuntu subsystem on Windows),
 ### Download and install
@@ -52,13 +52,19 @@ So, it is STRONGLY suggested to get everything installed before attending the su
 wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
 bash Anaconda3-2022.05-Linux-x86_64.sh
 ```
+Note that there could be newer Anaconda versions available [here](https://www.anaconda.com/download/#linux). Please scroll down and find the relevant version of Linux Anaconda Installers you like.<br/>
+Or you may update your existing Anaconda in the terminal, when (base) is activated, using
+```
+conda update anaconda
+```
+
 ### Initiate conda with different shells
 
 Right after the installation of Anaconda, you will be asked to initiate conda with the command
 ```
 conda init
 ```
-Or, you can use 
+Or you can use 
 ```
 conda init --all
 ```
