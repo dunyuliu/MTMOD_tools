@@ -19,3 +19,9 @@ echo 'source sz.2d.thermal.structure.install.sh'
 source sz.2d.thermal.structure.install.sh
 echo ' '
 echo ' '
+
+echo 'Testing fault.dynamics ... ...'
+echo 'source fault.dynamics.install.sh'
+source fault.dynamics.install.sh
+echo ' '
+echo ' '
