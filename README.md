@@ -2,7 +2,7 @@
 The repository contains the information on how to create the computing environment for the [MTMOD: Megathrust Modeling Framework](https://sites.utexas.edu/mtmod/) project's summer schools since 2022.
 
 ## ***News in 2023***
-* [SZ_2D_thermal_structure](https://github.com/gabriellemhobson/SZ_2D_thermal_structure.git), [fdra-mtmod](https://github.com/camcat/fdra-mtmod.git) are welcomed to MTMOD_tools. <br/>
+* [SZ_2D_thermal_structure](https://github.com/gabriellemhobson/SZ_2D_thermal_structure.git), [fdra-mtmod](https://github.com/camcat/fdra-mtmod.git), FaultDynamics are welcomed to MTMOD_tools. <br/>
 * The docker image of MTMOD_tools is available via ***```docker pull dunyuliu/mtmod```*** and also [this link](https://hub.docker.com/r/dunyuliu/mtmod). A quick start guide on how to use Docker Desktop and run the ```mtmod``` docker image is available via ```docker.quickstart.guide.md```. <br/>
 * The majority of MTMOD tools are built under Anaconda env ```mtmod```.
   * If you have an exisiting ```mtmod``` env built in previous summer school, please ```source MTMOD.env.2023.add.sh``` in the terminal to add additional packages for the 2023 summer school.
@@ -32,6 +32,7 @@ MacOS (for crs, you may need a different c++ compiler other than the default cla
   [RateState](https://drive.google.com/drive/folders/15nl880SFTFe61iJDIw38vunxTQdSBYZY?usp=sharing) and ViscoQD - see section 5 <br/>
   [SZ_2D_thermal_structure](https://github.com/gabriellemhobson/SZ_2D_thermal_structure.git) <br/>
   [fdra-mtmod](https://github.com/camcat/fdra-mtmod.git) <br/>
+  FaultDynamics (see fault.dynamics.install.sh) <br/>
   Some useful datasets are provided under the subfolder /datasets. Please refer to the REAME inside for details. 
   
 ### Disk usage
