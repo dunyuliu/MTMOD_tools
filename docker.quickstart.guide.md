@@ -1,6 +1,6 @@
 ## Docker Quick Start Guide
 
-The mtmod docker image that contains Anaconda ```mtmod``` env is available via ```docker pull dunyuliu/mtmod```. <br/>
+The mtmod docker image that contains Anaconda ```mtmod``` env is available via ```docker pull dunyuliu/mtmod:2023```. <br/>
 If [Docker Desktop](https://www.docker.com/products/docker-desktop/) is installed locally, users can pull the image and run it as a container. <br/>
 
 For Windows OS with WSL available, Docker Desktop will be installed in the C:/ drive. <br/>
