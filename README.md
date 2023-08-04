@@ -3,7 +3,7 @@ The repository contains the information on how to create the computing environme
 
 ## ***News in 2023***
 * [SZ_2D_thermal_structure](https://github.com/gabriellemhobson/SZ_2D_thermal_structure.git), [fdra-mtmod](https://github.com/camcat/fdra-mtmod.git), FaultDynamics are welcomed to MTMOD_tools. <br/>
-* The docker image of MTMOD_tools is available via ***```docker pull dunyuliu/mtmod```*** and also [this link](https://hub.docker.com/r/dunyuliu/mtmod). A quick start guide on how to use Docker Desktop and run the ```mtmod``` docker image is available via ```docker.quickstart.guide.md```. <br/>
+* The docker image of MTMOD_tools is available via ***```docker pull dunyuliu/mtmod:2023```*** and also [this link](https://hub.docker.com/r/dunyuliu/mtmod). A quick start guide on how to use Docker Desktop and run the ```mtmod``` docker image is available via ```docker.quickstart.guide.md```. <br/>
 * The majority of MTMOD tools are built under Anaconda env ```mtmod```.
   * If you have an exisiting ```mtmod``` env built in previous summer school, please ```source MTMOD.env.2023.add.sh``` in the terminal to add additional packages for the 2023 summer school.
   * If you intend to build ```mtmod``` env from scratch, please following Section 2 to install Anaconda on Mac/Windows Linux Subsystem and Section 4 to create the ```mtmod``` env.
