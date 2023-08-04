@@ -14,7 +14,7 @@ Below are detailed commands to pull and run the mtmod docker image and how to mo
 
 Open Powershell with admin access, then type the following command in the terminal.
 ```
-docker run -it --name $mtmod -v $mtmod.external.drive:$proxy.path dunyuliu/mtmod
+docker run -it --name $mtmod -v $mtmod.external.drive:$proxy.path dunyuliu/mtmod:2023
 ```
 where $mtmod is the name of the container shown in the Docker Desktop, for example mtmod, and <br/>
 $mtmod.external.drive is the path of the external drive to be mounted to the container, say D:/mtmod.data, and <br/>
@@ -22,7 +22,7 @@ $proxy.path is the proxy path of the external drive in the container, say /mount
 
 Here is an example:
 ```
-docker run -it --name mtmod -v D:/mtmod.data:/mount dunyuliu/mtmod
+docker run -it --name mtmod -v D:/mtmod.data:/mount dunyuliu/mtmod:2023
 ```
 
 NOTE: If you don't want to mount external drives to the container, please don't add the flag -v and the following path. In this case, you will run everything inside the container, which is the C:/ drive and it may eat up disk space <br/>
