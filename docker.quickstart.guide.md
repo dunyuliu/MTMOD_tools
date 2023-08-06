@@ -8,14 +8,12 @@ docker pull dunyuliu/mtmod:2023
 ```
 where the mtmod docker image that contains Anaconda ```mtmod``` env is available and will be pulled and run as a container. <br/>
 
-For Windows OS with WSL available, Docker Desktop will be installed in the C:/ drive. <br/>
+For Windows OS with WSL available, Docker Desktop will be installed in the C:/ drive or system drive. <br/>
 The external drives could be mounted to the docker container, which allows editing files and viewing results. <br/>
 
 Currently, the image is ~10 GBs. <br>
 
-Below are detailed commands to pull and run the mtmod docker image and how to mount external drives. <br/>
-
-# Windows OS
+Below are detailed commands to pull and run the mtmod docker image and how to mount external drives for Windows users as an example. <br/>
 
 Open Powershell with admin access, then type the following command in the terminal.
 ```
