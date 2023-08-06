@@ -1,7 +1,12 @@
 ## Docker Quick Start Guide
 
-The mtmod docker image that contains Anaconda ```mtmod``` env is available via ```docker pull dunyuliu/mtmod:2023```. <br/>
-If [Docker Desktop](https://www.docker.com/products/docker-desktop/) is installed locally, users can pull the image and run it as a container. <br/>
+First, you need to install [Docker Desktop](https://www.docker.com/products/docker-desktop/). For Windows users, please download Docker Desktop from previous link and install it. For Mac users, please choose between Apple Chip or Intel Chip for the installer. <br/>
+
+After Docker Desktop is installed, you need to run it with admin access. Then, you need to open a terminal for Mac users or a Powershell terminal with admin access for Windows users, and type the command 
+```
+docker pull dunyuliu/mtmod:2023
+```
+where the mtmod docker image that contains Anaconda ```mtmod``` env is available and will be pulled and run as a container. <br/>
 
 For Windows OS with WSL available, Docker Desktop will be installed in the C:/ drive. <br/>
 The external drives could be mounted to the docker container, which allows editing files and viewing results. <br/>
