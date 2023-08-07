@@ -22,7 +22,7 @@ include("stress_utilities.jl")
 # data
 # this data_dir is for mtmod docker image. 
 # need to change it for other systems.
-const data_dir = "/root/MTMOD_tools/stress.inversion.julia/" 
+const data_dir = "/home/MTMOD_tools/stress.inversion.julia/" 
 const mech_file = data_dir * "meca_Japan_Uchide2022.txt"
 
 # floating point precision for calculations
