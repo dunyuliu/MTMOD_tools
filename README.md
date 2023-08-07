@@ -171,6 +171,10 @@ You may need tex and latex. On Ubuntu, you can try this
 ```
 sudo apt install texlive divpng
 ```
+Trouble-shooting
+* On Windows, there may be WSL-version-too-low issue when running Docker Desktop. Please go to Settings/Windows Update/Advanced options and enable "Receive updates for other Microsoft products when you update Windows".
+* Mac M1 chip runs very slowly with Docker Desktop (20230807).
+  
 ## On choosing a proper license for your open-source project
 This [link](https://choosealicense.com/about/) provides very useful information on licenses.
 
