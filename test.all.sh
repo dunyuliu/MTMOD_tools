@@ -25,3 +25,7 @@ echo 'source fault.dynamics.install.sh'
 source fault.dynamics.install.sh
 echo ' '
 echo ' '
+
+echo 'Testing stress.inversion.julia ... ...'
+echo 'It may take 20+ minutes ... ...'
+julia stress.inversion.julia/serial_uchide_inversion.jl
