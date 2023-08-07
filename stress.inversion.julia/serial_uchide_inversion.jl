@@ -20,8 +20,10 @@ include("stress_utilities.jl")
 ######### Define Program Parameters ##########
 
 # data
-const data_dir = "/Volumes/LaCie_01/DATA/FRES/"
-const mech_file = data_dir * "Uchide2022/data/meca_Japan_Uchide2022.txt"
+# this data_dir is for mtmod docker image. 
+# need to change it for other systems.
+const data_dir = "/root/MTMOD_tools/stress.inversion.julia/" 
+const mech_file = data_dir * "meca_Japan_Uchide2022.txt"
 
 # floating point precision for calculations
 const fptype = Float32
