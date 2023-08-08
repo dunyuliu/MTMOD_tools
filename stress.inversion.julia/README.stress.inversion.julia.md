@@ -1,4 +1,4 @@
-This README describes how to install Julia inside the Anaconda mtmod env. <br/>
+This README describes how to install Julia inside the Anaconda mtmod env and run stress.inversion.julia. <br/>
 First, activate the conda mtmod env by 
 ```
 conda activate mtmod
