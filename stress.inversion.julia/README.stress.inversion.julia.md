@@ -24,7 +24,7 @@ julia
 in the terminal. <br/>
 Then, type 
 ```
-instantiate
+]
 ```
 Then, install and build packages by 
 ```
