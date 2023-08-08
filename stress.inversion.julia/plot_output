@@ -1,0 +1,62 @@
+#!/bin/bash
+# plot stress inversion ouput
+# GMT6
+infile=${1-stress_inversion_binX-0.50_strideX-0.50_binY-0.50_strideY-0.50_binT-0.16_strideT-0.16.f32.txt} # stress inversion output
+tmin=${2-2010}			# time range
+tmax=${3-2011}
+if [ -s $infile ];then		      # check if file exists
+    echo $0: reading inversion output from $infile
+else
+    echo $0: $infile not found
+    exit
+fi
+ostring=${infile%.*}		# remove suffix, for renaming output
+# make variable for temporary files and cleanup
+tmpn=`mktemp`
+trap "rm -f $tmpn*" EXIT
+
+#
+# lon lat time count friction misfit shape s1a s1p s2a s2p s3a s3p
+#
+#minmax -H1 $infile		# file info, removing header line
+gmt info -H1 $infile
+
+scale=0.2
+echo $0: selecting inversion results from $tmin to $tmax years
+gawk -v scale=$scale -v tmin=$tmin -v tmax=$tmax \
+     'BEGIN{pi=atan2(1,0)*2;pif=180/pi;}{if(NR>1)if(($3>=tmin)&&($3<tmax))print($1,$2,$7,$8,cos($9/pif)*scale)}' $infile > $tmpn.dat # plot azimuth of s1 scaled by dip , use shape for coloring
+cp $tmpn.dat ./Daniel_2010_2011.txt
+#minmax $tmpn.dat
+nline=`wc -l $tmpn.dat | gawk '{print($1)}'`
+if [ $nline -lt 1 ];then # check lenght
+    echo $0: only extracted $nline entries
+    exit
+fi
+
+gmt set FONT_ANNOT_PRIMARY 6p
+gmt set MAP_FRAME_WIDTH 1p
+gmt set MAP_FRAME_PEN .2p
+gmt set MAP_TICK_LENGTH_PRIMARY .05
+
+#reg=`minmax $tmpn.dat -I1 -fg`	# determine geographic region using GMT minmax, can make static
+reg=`gmt info $tmpn.dat -I1 -fg`
+
+ofile=$ostring.ps		# output file name, PS, temporary
+ofile_pdf=$ostring.pdf		# output file name, PDF
+echo $0: region $reg, plotting $nline inversion results, major axis azimuth corrected for plunge
+
+mode=2							# 1: sticks 2: colored by shape
+proj=-JM7					  # projection
+gmt pscoast $reg $proj -Dl+f -W.25 -K -P -S100 -G200 > $ofile # coastline and start plot
+if [ $mode = 1 ];then
+    gawk '{print($1,$2,$4,$5)}' $tmpn.dat | \
+	gmt psxy -SV0.025/0.01/0.01 $reg $proj  -O -K -Gorange -W0.2 -fg >> $ofile		# plot balanced vectors as sticks
+else
+    gmt makecpt -T0/1/0.1 -Croma > $tmpn.cpt # colorscale
+    gmt psxy $tmpn.dat -C$tmpn.cpt -SV0.025/0.01/0.01 $reg $proj  -O -K  -W0.2 -fg >> $ofile		# plot balanced vectors as sticks
+    gmt psscale -D1/4.5/3/.2 -C$tmpn.cpt -B.2/:"S": -O -K >> $ofile
+fi
+gmt psbasemap $reg $proj -O -Ba5f1WeSn >> $ofile # add labels and end plot
+gmt psconvert -Tf -A+m0.1 $ofile		      # convert to PDF and fix BB
+echo $0: output in $ostring.pdf
+rm $ofile
