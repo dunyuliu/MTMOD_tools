@@ -29,7 +29,7 @@ MacOS (for crs, you may need a different c++ compiler other than the default cla
   [d94](https://github.com/camcat/d94-mtmod) - see section 6 <br />
   Earthquake-Python-Examples <br/>
   [SeisSol](https://www.seissol.org/) and [SeisSol Tutorial](https://github.com/SeisSol/Training) - see section 3 <br/>
-  [RateState](https://drive.google.com/drive/folders/15nl880SFTFe61iJDIw38vunxTQdSBYZY?usp=sharing) and ViscoQD - see section 5 <br/>
+  [RateState](https://utexas-my.sharepoint.com/personal/dliu_ig_utexas_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fdliu%5Fig%5Futexas%5Fedu%2FDocuments%2F2%2EThorsten%5FBecker%2F13%2EMTMOD%5Fsummer%5Fschool%2Ftools%2F3%2EKaj%5FJohnson%2FRelease%5FRateState%2Ezip&parent=%2Fpersonal%2Fdliu%5Fig%5Futexas%5Fedu%2FDocuments%2F2%2EThorsten%5FBecker%2F13%2EMTMOD%5Fsummer%5Fschool%2Ftools%2F3%2EKaj%5FJohnson&ga=1) and ViscoQD - see section 5 <br/>
   [SZ_2D_thermal_structure](https://github.com/gabriellemhobson/SZ_2D_thermal_structure.git) <br/>
   [fdra-mtmod](https://github.com/camcat/fdra-mtmod.git) <br/>
   FaultDynamics (see fault.dynamics.install.sh) <br/>
